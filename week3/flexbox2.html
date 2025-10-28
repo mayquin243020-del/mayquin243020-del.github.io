@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Exercise 2 </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+            background-color: #0b223d;
+            color: #eee;
+        }
+
+        h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            color: #fff;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #fff;
+            padding: 10px 30px;
+            margin-bottom: 40px;
+            border-radius: 4px;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .logo h2 {
+            color: #333;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        .menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+            color: #333;
+        }
+
+        .header2 .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .header2 .phone {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .header3 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #fff;
+            padding: 15px 30px;
+            border-radius: 6px;
+            margin-bottom: 40px;
+        }
+
+        .header3 .phone {
+            color: #000;
+            font-size: 14px;
+        }
+
+        .header3 .nav-links {
+            display: flex;
+            gap: 25px;
+            flex-direction: row;
+            margin-top: 10px;
+            align-items: center;
+        }
+
+        .header3 .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .header3 .nav-links a.active {
+            color: orange;
+            font-weight: bold;
+        }
+
+        .contact-btn {
+            background-color: orange;
+            color: #333;
+            border: none;
+            padding: 6px 14px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .contact-btn {
+            background-color: orange;
+            color: #333;
+            border: none;
+            padding: 6px 14px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .contact-btn:hover {
+            opacity: 0.9;
+        }
+
+        .header3 .contact {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <header class="header header1">
+        <div class="logo">
+            <img src="elementralogo.png" alt="logo">
+        </div>
+        <div class="menu-icon">☰</div>
+    </header>
+
+
+    <header class="header header2">
+        <div class="logo">
+            <img src="elementralogo.png" alt="logo">
+        </div>
+        <div class="contact-info">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+            <span class="phone"><i class="fa-solid fa-phone"></i> 555-123-4567</span>
+            <span class="phone"> 555-123-4567</span>
+            <div class="menu-icon">☰</div>
+        </div>
+    </header>
+    <header class="header header3">
+        <div class="logo">
+            <img src="elementralogo.png" alt="logo">
+        </div>
+
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#" class="active">Services</a>
+            <a href="#">Work</a>
+            <a href="#">Project Details</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="contact">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+            <span class="phone"><i class="fa-solid fa-phone"></i> 555-123-4567</span>
+            <span class="phone"> 555-123-4567</span>
+            <button class="contact-btn">Contact</button>
+        </div>
+    </header>
+
+
+</body>
+
+</html>

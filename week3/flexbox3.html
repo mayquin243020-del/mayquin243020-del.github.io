@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox3</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #fff;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #222;
+        }
+
+        .nav-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #555;
+            font-weight: bold;
+        }
+
+        .quote-btn {
+            padding: 10px 20px;
+            background-color: #f9f9f9;
+            color: #333;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hero-text {
+            max-width: 50%;
+        }
+
+        .hero-text h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .consult-btn {
+            padding: 12px 24px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .hero-image {
+            text-align: center;
+            margin-left: -20px;
+        }
+
+        .hero-image img {
+            width: 200px;
+            margin-bottom: 20px;
+            margin-left: -20px;
+        }
+
+        .icons span {
+            font-size: 2rem;
+            margin: 10px;
+        }
+
+        .partners {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            padding: 40px;
+            background-color: #fff;
+            flex-wrap: wrap;
+        }
+
+        .partners img {
+            height: 40px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo"></div>
+        <img src="positivuslogo.png" alt="Amazon" />
+        <a href="#">About us </a>
+        <a href="#">Services</a>
+        <a href="#">Use Cases</a>
+        <a href="#">Pricing</a>
+        <a href="#">Blog</a>
+        <button class="quote-btn">Request a quote</button>
+    </header>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Navigating the digital landscape for success.</h1>
+            <p>Our digital marketing agency helps businesses grow and succeed online through a range of
+                services including SEO,PPC,social media marketing, and content creation ..</p>
+            <button class="consult-btn">Book a consultation</button>
+        </div>
+        <div class="hero-image">
+            <img src="megaphone.png" alt="Megaphone graphic" />
+        </div>
+    </section>
+    <section class="partners">
+        <img src="amazonlogo.png" alt="Amazon" />
+        <img src="dribblelogo.png" alt="Bubble" />
+        <img src="hubspot.png" alt="HubSpot" />
+        <img src="notionlogo.png" alt="Notion" />
+        <img src="netflixlogo.png" alt="Netflix" />
+        <img src="zoomlogo.png" alt="Zoom" />
+    </section>
+
+</body>
+
+</html>

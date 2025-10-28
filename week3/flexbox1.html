@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=    <h1>Koo May Quin</h1>, initial-scale=1.0">
+    <title>Flexbox1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Iceberg&family=Oxygen:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background: #e1e3e1;
+            margin: 0;
+            padding: 20px;
+            font-family: "Oxygen", sans-serif;
+            text-align: left;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            background-color: #f7f7f3;
+            gap: 30px;
+            padding: 40px;
+        }
+
+        .card {
+            width: 240px;
+            border-radius: 20px;
+            background-color: white;
+            padding: 15px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+        }
+
+        .image-box {
+            width: 200px;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .residential {
+            background-image: url("residentialproject.jpg");
+        }
+
+        .commercialspaces {
+            background-image: url("commercial.jpg");
+        }
+
+        .infrastructureworks {
+            background-image: url("infrastructure.jpg");
+        }
+
+        .text {
+            color: #333;
+            font-weight: bold;
+            font-size: 16px;
+            text-align: left;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image-box residential"></div>
+            <div class="text">Residential Project</div>
+            <p>We build sustainable and modern homes for comfortable living</p>
+        </div>
+
+        <div class="card">
+            <div class="image-box commercialspaces"></div>
+            <div class="text">Commercial Spaces</div>
+            <p> We create efficient , inspiring workspaces for businesses of
+                all sizes. </p>
+        </div>
+
+        <div class="card">
+            <div class="image-box infrastructureworks"></div>
+            <div class="text">Infrastructure Works</div>
+            <p> We develop strong reliable infrastructure for growing communities </p>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
