@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Menu</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -25,7 +27,7 @@
         }
 
         .logo img {
-            height: 60px;
+            height: 40px;
             width: auto;
             display: block;
         }
@@ -43,10 +45,24 @@
             font-size: 16px；
         }
 
+        nav a:nth-child(2) {
+            color: #ffa500;
+        }
+
         .contact-info {
             font-size: 16px;
             color: #333;
             margin-left: 20px;
+        }
+
+        .contact-button {
+            background-color: #ffa500;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-left: 10px;
         }
 
         .hamburger {
@@ -61,23 +77,21 @@
             .contact-button {
                 display: none;
             }
+
+            .nav-container {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .logo,
+            .contact-info,
+            .hamburger {
+                display: block;
+            }
         }
 
-        .nav-container {
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-        }
 
-        .logo,
-        .contact-info,
-        .hamburger {
-            display: block;
-        }
-
-        .hamburger {
-            margin-left: 10px;
-        }
 
         @media screen and (max-width: 500px) {
             .contact-info {
@@ -92,14 +106,31 @@
         .logo {
             display: block;
         }
-
-        .hamburger {
-            display: block;
-        }
     </style>
 </head>
 
 <body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo.png" alt="ELEMENTRA Logo" />
+            </div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">Work</a>
+                <a href="#">Project Details</a>
+                <a href="#">Contact</a>
+            </nav>
+
+            <div class="contact-info">
+                <i class="fas fa-phone"></i>555-123-4567
+            </div>
+            <button class="contact-button">Contact</button>
+
+            <div class="hamburger">☰</div>
+        </div>
+    </header>
 </body>
 
 </html>
