@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positivus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #f4f4f4;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        nav a:nth-child(2) {
+            background-color: #00ff99;
+            padding: 6px 12px;
+            border-radius: 5px;
+            color: black;
+        }
+
+        .quote-btn {
+            border: 2px solid black;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: black;
+            background-color: white;
+            font-weight: 500;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .proven-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fff;
+            padding: 40px;
+            margin: 40px auto;
+            max-width: 1200px;
+            border-radius: 12px;
+        }
+
+        .proven-image {
+            flex: 1 1 45%;
+            height: 300px;
+            background-color: #e6f2ff;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #555;
+            font-size: 12px;
+        }
+
+        .proven-text {
+            flex: 1 1 45%;
+            padding: 20px;
+        }
+
+        .proven-text h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .proven-text p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .featured {
+            background-color: #333;
+            color: #f4f4f4;
+            ;
+            padding: 40px;
+            border-radius: 12px;
+            max-width: 1200px;
+            margin: 0 auto 60px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .featured-text {
+            flex: 1 1 45%;
+        }
+
+        .featured-text h3 {
+            font-size: 1rem;
+            color: #00ff99;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .featured-text h4 {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .featured-text p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+
+        .stats {
+            flex: 0 0 500px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .stat-box {
+            flex: 1 1 calc(50% - 10px);
+            background-color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .stat-box h5 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+            color: #00ff99;
+        }
+
+        .stat-box p {
+            font-size: 0.95rem;
+            color: #ccc;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            nav,
+            .quote-btn {
+                display: none;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .proven-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .featured {
+                flex-direction: column;
+            }
+
+            .stats {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .satat-box {
+                width: 260px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="positivuslogo.png" alt="Positivus Logo">
+        </div>
+
+        <nav>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Use Cases</a>
+            <a href="#">Pricing</a>
+            <a href="#">Blog</a>
+        </nav>
+        <a href="#" class="quote-btn">Request a Quote</a>
+        <div class="hamburger">☰</div>
+    </header>
+    <section class="proven-section">
+        <div class="proven-image">[ Illustration Placeholder ]</div>
+        <div class="proven-text">
+            <h2>Proven Success Stories</h2>
+            <p>
+                Discover how Positivus helped leading brands achieve breakthrough results through
+                data-driven strategies and customer-centric solutions.
+            </p>
+        </div>
+    </section>
+    <div class="featured">
+        <div class="featured-text">
+            <h3>FEATURED SUCCESS STORY</h3>
+            <h4>Scaling Success for a Leading E-Commerce Brand</h4>
+            <p>
+                Our client experienced a massive growth in conversion and retention after optimizing
+                their customer experience and implementing data-driven marketing.
+            </p>
+        </div>
+        <div class="stats">
+            <div class="stat-box">
+                <h5>200%</h5>
+                <p>Increase in conversion rate</p>
+            </div>
+            <div class="stat-box">
+                <h5>150%</h5>
+                <p>Increase in average order value</p>
+            </div>
+            <div class="stat-box">
+                <h5>75%</h5>
+                <p>Increase in customer retention</p>
+            </div>
+            <div class="stat-box">
+                <h5>75%</h5>
+                <p>Increase in repeat purchase rate</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
