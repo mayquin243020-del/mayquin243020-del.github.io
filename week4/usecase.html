@@ -70,6 +70,7 @@
             margin: 40px auto;
             max-width: 1200px;
             border-radius: 12px;
+            gap: 20px;
         }
 
         .proven-image {
@@ -184,6 +185,7 @@
 
             .proven-section {
                 flex-direction: column;
+                align-items: center;
                 text-align: center;
             }
 
@@ -205,9 +207,16 @@
             }
 
             .featured-section {
-                flex-direction: column;
-                text-align: center;
-                padding: 40px 20px;
+                background-color: #000;
+                color: white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                padding: 60px 80px;
+                border-radius: 16px;
+                max-width: 1200px;
+                margin: 60px auto;
             }
 
             .featured-text {
@@ -226,14 +235,17 @@
 
 
             .stats {
+                display: flex;
                 flex-direction: column;
                 align-items: center;
+                justify-content: center;
+                gap: 15px;
             }
 
             .stat-box {
-                width: 260px;
-
-
+                flex: none;
+                width: 80%;
+                max-width: 300px
             }
         }
     </style>
