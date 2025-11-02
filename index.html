@@ -17,13 +17,13 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 40px;
+            padding: 120px 140px;
             background: linear-gradient(to right, #667eea, #764ba2);
             color: #fff;
         }
 
         header .logo {
-            font-size: 24px;
+            font-size: 120px;
             font-weight: bold;
         }
 
@@ -41,7 +41,7 @@
         }
 
         .name {
-            font-size: 32px;
+            font-size: 80px;
             font-weight: 700;
             margin-top: 20px;
             font-family: 'Montserrat', sans-serif;
@@ -49,15 +49,164 @@
         }
 
         .bio {
-            font-size: 18px;
+            font-size: 40px;
             max-width: 600px;
-            margin: 10px auto 40px;
+            margin: 20px auto 40px;
             color: #444;
+            line-height: 1.6;
+            word-break: break-word;
+        }
+
+        .web {
+            font-size: 60px;
+            max-width: 600px;
+            margin: 40px auto 60px;
+            color: #444;
+        }
+
+        .social-icons img {
+            width: 120px;
+            height: 120px;
+            margin-left: 15px;
+            vertical-align: middle;
+        }
+
+        .exercise-list {
+            display: flex;
+            justify-content: center;
+            padding: 120px;
+        }
+
+        .exercise-box {
+            background: rgba(245, 211, 196, 0.25);
+            border-radius: 10px;
+            border: 2px solid rgba(118, 75, 162, 0.3);
+            padding: 50px;
+            width: 360px;
+            margin: 40px;
+        }
+
+        .exercise-box h3 {
+            font-size: 45px;
+            font-weight: bold;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .exercise-box h3 img {
+            width: 80px;
+            height: 80px;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+
+        .exercise-box a {
+            font-size: 30px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(to right, #764ba2, #667eea);
+            text-align: center;
+            padding: 40px 20px;
+            color: #fff;
+        }
+
+
+
+        footer .social-footer a img {
+            width: 120px;
+            height: 120px;
+            margin: 0 10px;
+            vertical-align: bottom
+        }
+
+        footer p {
+            font-size: 60px;
+            font-weight: bold;
+            margin-top: 20px;
         }
     </style>
 </head>
 
 <body>
+    <header>
+        <div class="logo">Quin</div>
+        <div class="social-icons">
+            <a href="https://instagram.com" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077042.png" alt="Instagram Icon">
+            </a>
+            <a href="https://facebook.com" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2083/2083617.png" alt="Facebook Icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="Twitter Icon">
+            </a>
+        </div>
+    </header>
+    <div class="content">
+        <div class="name">KooMayQuin</div>
+        <div class="web">Web Publishing</div>
+        <div class="bio"> I am a student majoring in digital media. I enjoy capturing life through my camera and love
+            listening to music to relax.Studying digital media allows me to express my ideas through videos and images
+            , which I find very interesting.</div>
+    </div>
+    <div class="exercise-list">
+        <div class="exercise-box">
+            <h3><img src="https://cdn-icons-png.flaticon.com/512/7955/7955802.png" alt="icon"> Week 1
+            </h3>
+            <a href="vscode://file/C:/mayquin/week1/exe1.html">View Exercise</a>
+            <a href="vscode://file/C:/mayquin/week1/exe1.html">View Exercise</a>
+        </div>
+        <div class="exercise-box">
+            <h3><img src="https://cdn-icons-png.flaticon.com/512/7955/7955802.png" alt="icon"> Week 2
+            </h3>
+            <a href="vscode://file/C:/mayquin/week2/exe1.html">View Exercise</a>
+            <a href="vscode://file/C:/mayquin/week2/exe1.html">View Exercise</a>
+            <a href="vscode://file/C:/mayquin/week2/exe1.html">View Exercise</a>
+        </div>
+        <div class="exercise-box">
+            <h3><img src="https://cdn-icons-png.flaticon.com/512/7955/7955802.png" alt="icon"> Week 3
+            </h3>
+            <a href="vscode://file/C:/mayquin/week3/exe1.html">View Exercise</a>
+            <a href="vscode://file/C:/mayquin/week2/exe1.html">View Exercise</a>
+            <a href="vscode://file/C:/mayquin/week2/exe1.html">View Exercise</a>
+        </div>
+        <div class="exercise-box">
+            <h3><img src="https://cdn-icons-png.flaticon.com/512/7955/7955802.png" alt="icon"> Week 4
+            </h3>
+            <a href="vscode://file/C:/mayquin/week4/exe1.html">View Exercise</a>
+            <a href="vscode://file/C:/mayquin/week4/exe1.html">View Exercise</a>
+            <a href="vscode://file/C:/mayquin/week4/exe1.html">View Exercise</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-footer">
+            <a href="https://www.flaticon.com/free-icon/instagram_1077042" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077042.png" alt="Instagram Icon">
+            </a>
+            <a href="https://www.flaticon.com/free-icon/facebook-app-symbol_20837" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2083/2083617.png" alt="Facebook Icon">
+            </a>
+            <a href="https://www.flaticon.com/free-icon/twitter_733635" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="Twitter Icon">
+            </a>
+            <p>©️ 2025 Koo May Quin. All right reserver.</p>
+        </div>
+    </footer>
+
+
 
 </body>
 
