@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F7F1DE;
+    color: #333
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 140px;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: #fff;
+}
+
+header .logo {
+    font-size: 120px;
+    font-weight: bold;
+}
+
+.content {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.profile-img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.name {
+    font-size: 80px;
+    font-weight: 700;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+
+.bio {
+    font-size: 40px;
+    max-width: 600px;
+    margin: 20px auto 40px;
+    color: #444;
+    line-height: 1.6;
+    word-break: break-word;
+}
+
+.web {
+    font-size: 60px;
+    max-width: 600px;
+    margin: 40px auto 60px;
+    color: #444;
+}
+
+.social-icons img {
+    width: 120px;
+    height: 120px;
+    margin-left: 15px;
+    vertical-align: middle;
+}
+
+.exercise-list {
+    display: flex;
+    justify-content: center;
+    padding: 120px;
+}
+
+.exercise-box {
+    background: rgba(150, 120, 200, 0.3);
+    ;
+    border-radius: 10px;
+    border: 2px solid rgba(118, 75, 162, 0.3);
+    padding: 50px;
+    width: 360px;
+    margin: 40px;
+}
+
+.exercise-box h3 {
+    font-size: 45px;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.exercise-box h3 img {
+    width: 80px;
+    height: 80px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.exercise-box a {
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #764ba2, #667eea);
+    text-align: center;
+    padding: 40px 20px;
+    color: #fff;
+}
+
+
+
+footer .social-footer a img {
+    width: 120px;
+    height: 120px;
+    margin: 0 10px;
+    vertical-align: bottom
+}
+
+footer p {
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 20px;
+}
