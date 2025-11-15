@@ -6,54 +6,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div.text {
-            position: relative;
-            top: -80px;
-            border: 3px
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fff;
         }
 
-        .text {
-            color: #333;
-            font-size: 16px;
-            line-height: 20px;
-            margin-bottom: 20px;
-            background-color: beige;
-            text-align: center;
-            width: 120px;
-            height: 120px;
+        .card-text {
+            position: relative;
+            top: -60px;
+            background: #fff;
+            padding: 15px;
+            width: 160px;
+            margin-left: 30px;
             border-radius: 10px;
+            font-size: 10px;
+            border: 3px solid #eee;
+            text-align: left;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 18px;
+
+        }
+
+
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
         }
 
         .card {
-            display: flex;
-            border-radius: 15px;
+            position: relative;
+            align-items: center;
+            gap: 20px;
+            width: 30%;
         }
 
-        .card div {
-            width: 33.33%;
-            padding: 15px;
-            color: black;
-            border-radius: 20px;
-            background-position: center
+        .card img {
+            width: 240px;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .readmore {
+            display: block;
+            margin-top: 8px;
+            margin-left: 30px;
+            font-weight: bold;
+            color: #2ecc71;
+            text-decoration: none;
+        }
+
+        p {
+            color: #666;
+            font-size: 14px;
+            max-width: 550px;
+            margin: auto;
         }
     </style>
 </head>
 
 
 <body>
-    <div class="card">
-        <img src="image/download.jpg" width="300">
-        <img src="image/download.jpg" width="300">
+    <div class="container">
+        <h1>Caring is the new marketing</h1>
+        <p> The Nexcent blog is the best place to read about the latest membership insights, trends and more.
+            See who's joining the community. </p>
+
+        <div class="grid">
+
+            <div class="card">
+                <img src="image/image1.jpeg">
+
+                <div class="card-text">
+                    Creating Streamlined Safeguarding Processes with OneRen
+                    <a href="#" class="readmore">Readmore →</a>
+
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="image/image2.jpeg">
+
+                <div class="card-text">
+                    What are your safeguarding responsibilities
+                    and how can you manage them?
+                    <a href="#" class="readmore">Readmore →</a>
+
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="image/image3.jpeg">
+
+                <div class="card-text">
+                    Revamping the Membership Model
+                    with Triathlon Australia
+                    <a href="#" class="readmore">Readmore →</a>
+
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="image/image4.jpeg">
+
+                <div class="card-text">
+                    Creating Streamlined Safeguarding
+                    Processes with OneRen
+                    <a href="#" class="readmore">Readmore →</a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="image/image5.jpeg">
+                <div class="card-text">
+                    What are your safeguarding responsibilities
+                    and how can you manage them?
+                    <a href="#" class="readmore">Readmore →</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/image6.jpeg">
+                <div class="card-text">
+                    he artist created an image that inspires creativity
+                    and imagination.
+                    <a href="#" class="readmore">Readmore →</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="text">
-        <p>Free Delivery,add to Cart if you interested or just buy now</p>
-
-    </div>
-
-
-
-
-
 
 
 </body>
