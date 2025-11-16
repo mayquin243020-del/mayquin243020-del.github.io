@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding-top: 240px;
+    background: #f5f7fb;
+    font-family: Arial;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+
+.card {
+    width: 320px;
+    height: 330px;
+    background: #fff;
+    position: relative;
+    align-items: left;
+    border-radius: 20px;
+    padding: 16px 18px;
+}
+
+.heart {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    font-size: 24px;
+    color: #ff4d6d;
+    cursor: pointer;
+}
+
+.square-box {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background: #ddd;
+    position: relative;
+}
+
+.square-box img {
+    width: 120px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.square-img {
+    width: px;
+    height: 20px;
+    display: block;
+    margin: 10px auto 0 auto;
+    align-items: left;
+}
+
+.square-image img {
+    width: 320px;
+    height: 200px;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 15px;
+
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.subtitle {
+    font-size: 15px;
+    color: gray;
+    margin-top: 2px;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.status-card {
+    width: 240px;
+    height: 90px;
+    position: absolute;
+    top: 240px;
+    right: -90px;
+    transform: translateY(-50%);
+    background: #fff;
+    border-radius: 15px;
+    padding: 10px 10px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+    display: flex;
+
+    gap: 10px;
+}
+
+.status-card img {
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+    border-radius: 60%;
+    align-items: center;
+
+}
+
+.status-title {
+    font-weight: bold;
+    bottom: -80px;
+
+}
+
+.text {
+    font-size: 12px;
+    color: gray;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.completed {
+    color: #3796ff;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+@media (max-width: 500px) {
+    .status-card {
+        width: 150px;
+        bottom: -20px;
+    }
+}
+
+.heart-icon {
+    position: absolute;
+    right: 16px;
+    bottom: 22px;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.card-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 200px;
+}
+
+
+.icon-wrap {
+    right: 10px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.icon-row {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
