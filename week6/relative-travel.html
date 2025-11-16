@@ -9,74 +9,126 @@
     <style>
         body {
             margin: 0;
-            padding: 40px;
+            padding-top: 240px;
             background: #f5f7fb;
             font-family: Arial;
+            align-items: center;
+            justify-content: center;
+            display: flex;
         }
 
-        h2 {
-            text-align: center;
-            margin-bottom: 40px;
-        }
 
-        .travel-container {
-            width: 90%;
-            margin: auto;
-            display: grid;
-            grid-template-columns: repeat;
-            gap: 35px;
-        }
 
         .card {
-            position: relative;
+            width: 320px;
+            height: 330px;
             background: #fff;
-            border-radius: 18px;
-            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
+            position: relative;
+            align-items: left;
+            border-radius: 20px;
+            padding: 16px 18px;
         }
 
-        .card img {
-            width: 100%;
+        .heart {
+            position: absolute;
+            right: 16px;
+            bottom: 16px;
+            font-size: 24px;
+            color: #ff4d6d;
+            cursor: pointer;
+        }
+
+        .square-box {
+            width: 20px;
+            height: 20px;
+            border-radius: 15px;
+            background: #ddd;
+            position: relative;
+        }
+
+        .square-box img {
+            width: 120px;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+
+        .square-img {
+            width: px;
+            height: 20px;
+            display: block;
+            margin: 10px auto 0 auto;
+            align-items: left;
+        }
+
+        .square-image img {
+            width: 320px;
             height: 200px;
-            object-fit: cover;
-        }
+            align-items: center;
+            margin: 0 auto;
+            border-radius: 15px;
 
-        .info-box {
-            padding: 20px;
         }
 
         .title {
-            font-size: 18px;
+            font-size: 20px;
             font-weight: bold;
-        }
-
-        .subtitle {
-            font-size: 13px;
-            color: gray;
+            text-align: left;
             margin-top: 5px;
         }
 
+        .subtitle {
+            font-size: 15px;
+            color: gray;
+            margin-top: 2px;
+            text-align: left;
+            margin-top: 15px;
+        }
+
         .status-card {
+            width: 240px;
+            height: 90px;
             position: absolute;
-            bottom: -25px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 180px;
+            top: 240px;
+            right: -90px;
+            transform: translateY(-50%);
             background: #fff;
             border-radius: 15px;
+            padding: 10px 10px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+            display: flex;
+
+            gap: 10px;
+        }
+
+        .status-card img {
+            width: 40px;
+            height: 40px;
             padding: 12px;
-            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
-            text-align: center;
-            font-size: 14px;
+            border-radius: 60%;
+            align-items: center;
+
         }
 
         .status-title {
             font-weight: bold;
+            bottom: -80px;
+
+        }
+
+        .text {
+            font-size: 12px;
+            color: gray;
+            font-weight: bold;
+            text-align: left;
+            margin-top: 10px;
         }
 
         .completed {
             color: #3796ff;
             font-size: 12px;
+            margin-top: 5px;
         }
 
         @media (max-width: 500px) {
@@ -85,12 +137,104 @@
                 bottom: -20px;
             }
         }
+
+        .heart-icon {
+            position: absolute;
+            right: 16px;
+            bottom: 22px;
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+
+        .card-row {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 200px;
+        }
+
+
+        .icon-wrap {
+            right: 10px;
+            bottom: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+        }
+
+        .icon-row {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+        }
     </style>
 
 </head>
 
 <body>
+    <div class="card-row">
+        <div class="card">
+            <div class="status-card">
+                <img src="image/image1.jpeg">
+                <div>
+                    <div class="subtitle">Ongoing</div>
+                    <div class="title">Trip to more </div>
+                    <div class="completed">40% completed</div>
+                </div>
+            </div>
+            <div class="square-image">
+                <img src="image/image2.jpeg">
+            </div>
 
+            <div class="title">Trip To Greece</div>
+            <div class="subtitle">14-29 June | by Robbin</div>
+
+            <div class="icon-row">
+                <div class="icon-wrap">
+                    <img src="image/arrow.png" class="icon">
+                    <img src="image/map.png" class="icon">
+                </div>
+
+                <div class="text">24 people going </div>
+            </div>
+
+            <img src="image/hear.png" class="heart-icon">
+        </div>
+
+        <div class="card">
+            <div class="status-card">
+                <img src="image/image3.jpeg">
+                <div>
+                    <div class="subtitle">Ongoing</div>
+                    <div class="title">Trip to more </div>
+                    <div class="completed">40% completed</div>
+                </div>
+            </div>
+            <div class="square-image">
+                <img src="image/image5.jpeg">
+            </div>
+
+            <div class="title">Trip To Greece</div>
+            <div class="subtitle">14-29 June | by Robbin</div>
+
+            <div class="icon-row">
+                <div class="icon-wrap">
+                    <img src="image/arrow.png" class="icon">
+                    <img src="image/map.png" class="icon">
+                </div>
+                <div class="text">24 people going </div>
+            </div>
+            <img src="image/hear.png" class="heart-icon">
+        </div>
+    </div>
+    </div>
 </body>
 
 </html>
