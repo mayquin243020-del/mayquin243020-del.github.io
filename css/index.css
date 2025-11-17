@@ -204,10 +204,10 @@ footer p {
 
 
     .exercise-box {
-        flex: 0 0 80%;
+        flex: 0 80%;
         max-width: 360px;
         margin: 20px 0;
-        padding: 20px;
+        padding: 5px;
         align-items: center;
     }
 
